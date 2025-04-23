@@ -1,0 +1,15 @@
+meta {
+  name: taxon
+  type: http
+  seq: 2
+}
+
+get {
+  url: https://artskart.artsdatabanken.no/publicapi/api/taxon/short?term=Astur gentilis
+  body: none
+  auth: inherit
+}
+
+params:query {
+  term: Astur gentilis
+}

@@ -1,0 +1,27 @@
+[dependency-groups]
+dev = [
+  "deptry",
+  "pre-commit"
+]
+
+[project]
+authors = [
+  {name = "Francesco Frassinelli", email = "francesco.frassinelli@nina.no"}
+]
+dependencies = [
+  "requests>=2.32.3",
+  "tqdm>=4.67.1"
+]
+description = ""
+license = {text = "GPL-3.0+"}
+name = "artsobservasjoner_download"
+readme = "README.md"
+requires-python = ">=3.10"
+version = "0.1.0"
+
+[tool.ruff]
+fix = true
+
+[tool.ruff.lint]
+ignore = ["COM812"]
+select = ["E", "W", "I", "F", "UP", "S", "B", "A", "COM", "LOG", "PTH", "Q"]

@@ -1,0 +1,18 @@
+meta {
+  name: observations
+  type: http
+  seq: 3
+}
+
+get {
+  url: https://artskart.artsdatabanken.no/publicapi/api/observations/list?Taxons=223141,223139&FromDate=01.01.2000&pageSize=10&filter.wktPolygon=POLYGON ((254967.13 7034042.43,254967.13 7040148.92,258669.4678 7040138.5445,258721.3453 7034073.5565,254967.13 7034042.43))
+  body: none
+  auth: inherit
+}
+
+params:query {
+  Taxons: 223141,223139
+  FromDate: 01.01.2000
+  pageSize: 10
+  filter.wktPolygon: POLYGON ((254967.13 7034042.43,254967.13 7040148.92,258669.4678 7040138.5445,258721.3453 7034073.5565,254967.13 7034042.43))
+}
